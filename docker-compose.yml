@@ -16,7 +16,7 @@ services:
   db:
     build: .docker/postgres
     container_name: prismaapi-db
-    restart: always
+    restart: no
     tty: true
     ports:
       - "5432:5432"
